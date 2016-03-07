@@ -1,0 +1,33 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/home/home";
+
+@import "../pages/location/location";
+
+@import "../pages/setting-index/setting-index";
+
+
+//图标放到250倍
+.icon-lg:before {
+  font-size: 250%;
+  vertical-align: -22%;
+}
+
+//图标放大200倍
+.icon-md:before {
+  font-size: 200%;
+  vertical-align: -16%;
+}
+
+//图标放大150倍
+.icon-sm:before {
+  font-size: 150%;
+  vertical-align: -10%;
+}

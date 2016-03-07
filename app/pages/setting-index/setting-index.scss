@@ -1,0 +1,33 @@
+.ion-ios-heart-outline:before{
+  font-size: larger;
+  color: red;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+ion-avatar {
+  img.lg,
+  ion-icon.lg{
+    max-width: 9.8rem;
+    max-height: 9.8rem;
+    border-radius: 4.9rem;
+    font-size: 32px;
+  }
+}
+
+body.ios {
+  .tabs-icon tabbar {
+    a[aria-selected="false"] {
+      color: #8c8c8c !important;
+    }
+    a[aria-selected="true"] {
+      color: #f53d3d !important;
+    }
+  }
+}

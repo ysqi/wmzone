@@ -1,0 +1,78 @@
+<ion-navbar *navbar>
+    <!--<button menuToggle *ngIf="!selectedItem">-->
+        <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
+    <!--<ion-nav-back-button class="button-clear">-->
+        <!--<ion-icon name="arrow-left-c"></ion-icon>-->
+        <!--&lt;!&ndash;<i class="ion-arrow-left-c"></i>&ndash;&gt;-->
+        <!--Back-->
+    <!--</ion-nav-back-button>-->
+    <ion-buttons start>
+        <button>
+            <ion-icon name="home"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>个人设置</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <!--<div *ngIf="selectedItem" class="selection">-->
+        <!--<b>{{selectedItem.title}}</b>-->
+        <!--<ion-icon name="{{selectedItem.icon}}"></ion-icon>-->
+        <!--<div>-->
+            <!--You navigated here from <b>{{selectedItem.title}}</b>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <ion-card>
+        <ion-card-content>
+            <ion-avatar>
+                <img src="{{userInfo.touxiang}}" class="center lg" >
+            </ion-avatar>
+            <p class="center">{{userInfo.name}}</p>
+        </ion-card-content>
+        <button ion-item>
+            <small  item-right>个人资料</small>
+        </button>
+    </ion-card>
+
+    <ion-card  >
+        <ion-item *ngIf="userInfo.ta" >
+            <ion-icon name="heart-outline" item-left  class="icon-md" ></ion-icon>
+            <h2> {{userInfo.ta.name}}</h2>
+            <p>{{userInfo.ta.desc}}</p>
+        </ion-item>
+        <ion-item *ngIf="userInfo.ta == null " >
+            <ion-icon name="sad-outline" class="icon-md" item-left></ion-icon>
+            <h2>TA</h2>
+            <p>还没出现</p>
+            <button item-right clear>
+                速速呼叫Ta
+            </button>
+        </ion-item>
+
+    </ion-card>
+</ion-content>
+
+<!--<ion-toolbar position="top">-->
+    <!--&lt;!&ndash;<ion-buttons start>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ion-icon name="home"></ion-icon>&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ion-buttons>&ndash;&gt;-->
+    <!--<ion-tabs class="tabs-icon-text">-->
+        <!--<ion-tab tabIcon="water" tabTitle="Water" ></ion-tab>-->
+        <!--<ion-tab tabIcon="leaf" tabTitle="Life" ></ion-tab>-->
+        <!--<ion-tab tabIcon="flame" tabTitle="Fire" ></ion-tab>-->
+        <!--<ion-tab tabIcon="magnet" tabTitle="Force"></ion-tab>-->
+        <!--</ion-tabs>-->
+<!--</ion-toolbar>-->
+<!--<ion-footer-bar align-title="left" class="bar-assertive">-->
+    <!--<div class="buttons">-->
+        <!--<button class="button">Left Button</button>-->
+    <!--</div>-->
+    <!--<h1 class="title">Title!</h1>-->
+    <!--<div class="buttons" ng-click="doSomething()">-->
+        <!--<button class="button">Right Button</button>-->
+    <!--</div>-->
+<!--</ion-footer-bar>-->

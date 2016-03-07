@@ -1,0 +1,36 @@
+
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>两小</ion-title>
+</ion-navbar>
+
+
+<ion-content padding class="getting-started">
+
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item>
+                <ion-avatar item-left primary>
+                    <ion-icon primary name="chatboxes-outline" ></ion-icon>
+                </ion-avatar>
+                <h2>黎黎2</h2>
+                <p>最后消息:</p>
+                <small item-right>09:34</small>
+            </ion-item>
+            <ion-item-options>
+                <button primary>
+                    <ion-icon name="eye"></ion-icon>
+                    已读
+                </button>
+                <button secondary>
+                    <ion-icon name="trash"></ion-icon>
+                    清理
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+        <button full (click)="loadMap()">获取定位{{info}}</button>
+    </ion-list>
+
+</ion-content>
